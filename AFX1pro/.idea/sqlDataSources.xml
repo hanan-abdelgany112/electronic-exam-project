@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="b4c2346b-ca41-4f83-9278-30cce8e1d3ca" name="electronicexam@localhost Mapping">
+      <data-sources db="919e9166-e14d-476f-b441-ae687d004287" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>

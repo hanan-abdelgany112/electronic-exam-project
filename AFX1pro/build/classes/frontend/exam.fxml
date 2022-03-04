@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="682.0" style="-fx-background-color: #22577E;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controaller.ExamController">
+   <children>
+      <ImageView fitHeight="66.0" fitWidth="59.0" layoutX="588.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/java.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="quesion" alignment="CENTER" cache="true" layoutX="21.0" layoutY="63.0" prefHeight="67.0" prefWidth="641.0" style="-fx-background-color: white;" text="q1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio1" layoutX="153.0" layoutY="158.0" mnemonicParsing="false" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="selected_answer" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio2" layoutX="154.0" layoutY="192.0" mnemonicParsing="false" text="2" toggleGroup="$selected_answer" />
+      <RadioButton fx:id="radio3" layoutX="154.0" layoutY="225.0" mnemonicParsing="false" text="3" toggleGroup="$selected_answer" />
+      <RadioButton fx:id="radio4" layoutX="155.0" layoutY="257.0" mnemonicParsing="false" text="4" toggleGroup="$selected_answer" />
+      <Button fx:id="next" layoutX="494.0" layoutY="317.0" mnemonicParsing="false" onAction="#onClickNext" prefHeight="31.0" prefWidth="70.0" text="Next">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="label1" layoutX="211.0" layoutY="158.0" style="-fx-background-color: white;" text="Label1" textFill="#070606">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="211.0" layoutY="192.0" style="-fx-background-color: white;" text="Label2" textFill="#070606">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="211.0" layoutY="225.0" style="-fx-background-color: white;" text="Label3" textFill="#070606">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" layoutX="211.0" layoutY="257.0" style="-fx-background-color: white;" text="Label4" textFill="#070606">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

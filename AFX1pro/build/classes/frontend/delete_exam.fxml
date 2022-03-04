@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #22577E;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controaller.deleteExamController">
+   <children>
+      <ImageView fitHeight="62.0" fitWidth="62.0" layoutX="519.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/java.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="170.0" layoutY="41.0" prefHeight="62.0" prefWidth="264.0" text="Delete Exam" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="210.0" layoutY="293.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="30.0" prefWidth="66.0" text="back">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="328.0" layoutY="293.0" mnemonicParsing="false" onAction="#onClickConfirm" text="confirm">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboBox" layoutX="200.0" layoutY="166.0" prefHeight="49.0" prefWidth="205.0" />
+   </children>
+</AnchorPane>

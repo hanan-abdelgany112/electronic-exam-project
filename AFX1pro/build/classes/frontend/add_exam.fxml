@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #22577E;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controaller.AddExamController">
+   <children>
+      <ImageView fitHeight="62.0" fitWidth="62.0" layoutX="519.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/java.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="answerTwo" layoutX="368.0" layoutY="147.0" prefHeight="31.0" prefWidth="163.0" promptText="2" />
+      <TextField fx:id="answerFour" layoutX="368.0" layoutY="200.0" prefHeight="31.0" prefWidth="163.0" promptText="4" />
+      <Button layoutX="228.0" layoutY="341.0" mnemonicParsing="false" onAction="#onClickEnd" prefHeight="30.0" prefWidth="44.0" text="End">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="333.0" layoutY="341.0" mnemonicParsing="false" onAction="#onClickNext" text="Next">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="examQuestion" layoutX="70.0" layoutY="77.0" prefHeight="43.0" prefWidth="461.0" />
+      <TextField fx:id="answerthree" layoutX="70.0" layoutY="200.0" prefHeight="31.0" prefWidth="163.0" promptText="3" />
+      <TextField fx:id="examName" layoutX="217.0" layoutY="26.0" prefHeight="31.0" prefWidth="163.0" promptText="Exam Name" />
+      <TextField fx:id="answerOne" layoutX="70.0" layoutY="147.0" prefHeight="31.0" prefWidth="163.0" promptText="1" />
+      <TextField fx:id="trueAnswer" layoutX="219.0" layoutY="261.0" prefHeight="31.0" prefWidth="163.0" promptText="true answer" />
+   </children>
+</AnchorPane>
